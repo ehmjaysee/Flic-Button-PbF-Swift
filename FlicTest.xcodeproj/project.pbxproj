@@ -13,8 +13,6 @@
 		252DB6C921A20D80001FAB3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252DB6C721A20D80001FAB3D /* Main.storyboard */; };
 		252DB6CB21A20D82001FAB3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 252DB6CA21A20D82001FAB3D /* Assets.xcassets */; };
 		252DB6CE21A20D82001FAB3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 252DB6CC21A20D82001FAB3D /* LaunchScreen.storyboard */; };
-		252DB6D721A210E3001FAB3D /* fliclib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 252DB6D521A20DB5001FAB3D /* fliclib.framework */; };
-		252DB6D821A210E3001FAB3D /* fliclib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 252DB6D521A20DB5001FAB3D /* fliclib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +22,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				252DB6D821A210E3001FAB3D /* fliclib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -40,7 +37,6 @@
 		252DB6CA21A20D82001FAB3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		252DB6CD21A20D82001FAB3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		252DB6CF21A20D82001FAB3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		252DB6D521A20DB5001FAB3D /* fliclib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = fliclib.framework; sourceTree = "<group>"; };
 		252DB6DA21A22976001FAB3D /* ios-bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ios-bridging-header.h"; path = "../../ios-boilerplate-swift-master/ios-boilerplate-swift/ios-bridging-header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,7 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				252DB6D721A210E3001FAB3D /* fliclib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +57,6 @@
 				25251DAD21AC962A0084612E /* README.md */,
 				252DB6C221A20D80001FAB3D /* FlicTest */,
 				252DB6C121A20D80001FAB3D /* Products */,
-				252DB6D521A20DB5001FAB3D /* fliclib.framework */,
 			);
 			sourceTree = "<group>";
 		};
