@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FlicTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roK-64-bAV">
+                                <rect key="frame" x="170" y="60" width="35" height="30"/>
+                                <state key="normal" title="Scan"/>
+                                <connections>
+                                    <action selector="B_scan:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sy2-bH-zZb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jqo-gL-T5G">
+                                <rect key="frame" x="148.5" y="130" width="78" height="30"/>
+                                <state key="normal" title="Disconnect"/>
+                                <connections>
+                                    <action selector="B_disconnect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nib-JK-v5e"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Okq-1e-pwl">
+                                <rect key="frame" x="20" y="626" width="335" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28X-JF-Pet">
+                                <rect key="frame" x="150.5" y="200" width="74" height="30"/>
+                                <state key="normal" title="Reconnect"/>
+                                <connections>
+                                    <action selector="B_reconnect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wer-Qw-omO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oax-Y9-W08">
+                                <rect key="frame" x="166.5" y="565" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tpa-Tb-IlU">
+                                <rect key="frame" x="165" y="270" width="45" height="30"/>
+                                <state key="normal" title="Forget"/>
+                                <connections>
+                                    <action selector="B_forget:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r82-NX-Gdr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Okq-1e-pwl" firstAttribute="top" secondItem="oax-Y9-W08" secondAttribute="bottom" constant="40" id="CkP-xK-sWl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Okq-1e-pwl" secondAttribute="bottom" constant="20" id="K1N-8e-15l"/>
+                            <constraint firstItem="Jqo-gL-T5G" firstAttribute="top" secondItem="roK-64-bAV" secondAttribute="bottom" constant="40" id="LY4-ja-53J"/>
+                            <constraint firstItem="Okq-1e-pwl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="R5y-ui-aHZ"/>
+                            <constraint firstItem="roK-64-bAV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RtU-wd-F29"/>
+                            <constraint firstItem="roK-64-bAV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="X8f-HF-8vA"/>
+                            <constraint firstItem="Tpa-Tb-IlU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZNY-42-xsg"/>
+                            <constraint firstItem="28X-JF-Pet" firstAttribute="top" secondItem="Jqo-gL-T5G" secondAttribute="bottom" constant="40" id="ajh-WO-qVP"/>
+                            <constraint firstItem="Tpa-Tb-IlU" firstAttribute="top" secondItem="28X-JF-Pet" secondAttribute="bottom" constant="40" id="cXZ-fJ-pTx"/>
+                            <constraint firstItem="oax-Y9-W08" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eRx-xb-tAT"/>
+                            <constraint firstItem="Okq-1e-pwl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="equ-Mg-NBy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Okq-1e-pwl" secondAttribute="trailing" constant="20" id="li9-EZ-cjR"/>
+                            <constraint firstItem="28X-JF-Pet" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vgH-jL-9rH"/>
+                            <constraint firstItem="Jqo-gL-T5G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zVW-Du-CWa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="O_message" destination="Okq-1e-pwl" id="BLn-K2-6tX"/>
+                        <outlet property="O_message2" destination="oax-Y9-W08" id="ebU-9G-zAK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
