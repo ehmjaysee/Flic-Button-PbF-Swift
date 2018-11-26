@@ -27,6 +27,10 @@ In particular, I would read the section on privacy modes.
 4) Install your PbF license keys.  Just look for "appID" near the top of the file ViewController.swift
 5) Build and run.  Note you cannot run this project on the simulator because bluetooth is required. 
 
+Note: As with all downloaded xCode projects, you will need to configure your application signing before you can build and run. Go into your target settings --> General --> Signing and select your team profile.  
+
+Note: You may also want to change other xCode settings such as deployment target. 
+
 ## Running the app
 
 Running the app is trivial, but sometimes the buttons can get into a state where they no longer connect.  If you get into this state it may be because you told the app to forget a button and now you are trying to reconnect to that button.  In this case you need to hold down the button for 6 seconds while the button is disconnected and the app is not scanning.  This will put the button back into the 'public' mode. 
