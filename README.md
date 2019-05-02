@@ -22,10 +22,16 @@ In particular, I would read the section on privacy modes.
 2) Download this xCode project into a fresh directory on your system.  
 3) Add the PbF library to your xCode project.  
 * Go to the Flic developer site: http://pbf-docs.flic.io 
-* Download the PbF library.  Look for the link called "PbF-lib-iOS-date...."
-* You now have a folder called fliclib.framework in your Downloads folder. Import this framework into your xCode project
-4) Install your PbF license keys.  Just look for "appID" near the top of the file ViewController.swift
-5) Build and run.  Note you cannot run this project on the simulator because bluetooth is required. 
+* Download the PbF library.  Click on the link called "PbF-lib-iOS-date...."
+* You now have a ZIP file in your Download folder named fliclib....zip. Unzip that file and you will now see fliclib.framework
+* Import fliclib.framework into your xCode project
+4) You will need to modify some of your xcode project settings after importing the fliclib.framework. You can find detailed instructions in their iOS tutorial at this link: http://pbf-docs.flic.io/guidelines/iOSTutorial.html
+* Go to Project build settings and set "allow non-modular includes in framework modules" to Yes
+* Go to Targets -> FlicTest -> General -> Linked Frameworks and Libraries, then remove fliclib.framework from that list
+* Go to Targets -> FlicTest -> General -> Embedded Binaries, then click the + symbol and select fliclib 
+* The remaining steps of the iOS tutorial should be done already in this test project
+5) Install your PbF license keys.  Just look for "appID" near the top of the file ViewController.swift
+6) Build and run.  Note you cannot run this project on the simulator because bluetooth is required. 
 
 Note: As with all downloaded xCode projects, you will need to configure your application signing before you can build and run. Go into your target settings --> General --> Signing and select your team profile.  
 
